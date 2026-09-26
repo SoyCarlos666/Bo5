@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Portafolio profesional de EL HADESSEI⁶⁶⁶ — gestión y administración de comunidades Minecraft.">
+  <title>EL HADESSEI⁶⁶⁶ — Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="orb orb-a"></div><div class="orb orb-b"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">H</span>
+      <span><strong id="brandName">EL HADESSEI⁶⁶⁶</strong><small>PORTAFOLIO</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#perfil">Perfil</a>
+      <a href="#metricas">Métricas</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+      <a class="admin-link" href="admin.html">Admin</a>
+    </nav>
+    <a class="btn btn-small" href="#contacto">Contactar</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">GESTIÓN DE COMUNIDADES MINECRAFT</div>
+        <h1 id="heroName">EL HADESSEI⁶⁶⁶</h1>
+        <p id="heroDescription">Gestión, coordinación y organización de equipos para crear comunidades Minecraft más ordenadas, activas y profesionales.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#perfil">Ver perfil</a>
+          <a class="btn ghost" href="#contacto">Hablemos</a>
+        </div>
+        <div class="status-line">
+          <span class="status-dot" id="discordDot"></span>
+          <span id="discordStatus">Discord: comprobando estado...</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="scan-ring"></div>
+        <div class="pixel-card">
+          <img id="avatar" src="https://mc-heads.net/body/ELHADESSEI/300" alt="Avatar Minecraft">
+        </div>
+        <div class="floating-tag">MINECRAFT</div>
+      </div>
+    </section>
+
+    <section class="section" id="perfil">
+      <div class="section-heading reveal">
+        <span>01 / PERFIL</span>
+        <h2>Experiencia enfocada en <em>comunidades</em>.</h2>
+      </div>
+      <div class="profile-grid">
+        <article class="panel reveal">
+          <div class="pixel-label">SOBRE MÍ</div>
+          <p id="profileText">Trabajo en la organización de servidores, coordinación de staff, soporte a jugadores y mejora de procesos internos.</p>
+          <div class="mini-list">
+            <div><b>01</b><span>Organización de equipos</span></div>
+            <div><b>02</b><span>Moderación y soporte</span></div>
+            <div><b>03</b><span>Coordinación operativa</span></div>
+          </div>
+        </article>
+        <article class="panel accent-panel reveal">
+          <div class="pixel-label">ENFOQUE</div>
+          <h3>Orden + estabilidad + crecimiento</h3>
+          <p>Una comunidad necesita procesos claros, comunicación y un equipo que sepa qué hacer en cada situación.</p>
+          <div class="chips"><span>STAFF</span><span>GESTIÓN</span><span>COMUNIDAD</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="metricas">
+      <div class="section-heading center reveal">
+        <span>02 / MÉTRICAS</span>
+        <h2>Resultados y trayectoria</h2>
+      </div>
+      <div class="stats-grid" id="statsGrid"></div>
+    </section>
+
+    <section class="section" id="experiencia">
+      <div class="section-heading reveal">
+        <span>03 / EXPERIENCIA</span>
+        <h2>Trayectoria en Minecraft</h2>
+        <p>Servidores y comunidades donde he participado en funciones de gestión, coordinación o soporte.</p>
+      </div>
+      <div class="timeline" id="experienceList"></div>
+    </section>
+
+    <section class="section" id="habilidades">
+      <div class="section-heading center reveal">
+        <span>04 / HABILIDADES</span>
+        <h2>Especialidades y fortalezas</h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="contact-card reveal">
+        <div class="contact-copy">
+          <div class="pixel-label">05 / CONTACTO</div>
+          <h2>¿Hablamos?</h2>
+          <p>Si tienes un servidor o proyecto Minecraft y buscas apoyo para organizar tu comunidad, puedes contactarme.</p>
+          <div class="contact-item"><span>✉</span><div><small>EMAIL</small><b id="emailText">contacto@example.com</b></div><button data-copy="emailText">Copiar</button></div>
+          <div class="contact-item"><span>◈</span><div><small>DISCORD</small><b id="discordText">EL HADESSEI</b></div><button data-copy="discordText">Copiar</button></div>
+        </div>
+        <form id="contactForm">
+          <label>Tu nombre<input required name="name" placeholder="Escribe tu nombre"></label>
+          <label>Tu Discord<input name="discord" placeholder="Tu usuario de Discord"></label>
+          <label>Tu servidor<input name="server" placeholder="Nombre de tu servidor"></label>
+          <label>¿En qué puedo ayudarte?<textarea required name="message" placeholder="Cuéntame sobre tu proyecto..."></textarea></label>
+          <button class="btn" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><span id="footerName">EL HADESSEI⁶⁶⁶</span><span>•</span><span>Portafolio Minecraft</span></footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
